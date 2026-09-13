@@ -1,0 +1,19 @@
+VERSION = 6,
+
+option SLs.LongswordBookSpawnMult {
+    page = SLs,
+    translation = PWPN_ForgeWeaponsBookSpawnMult,
+    type = double,
+    min = 0.0,
+    max = 1000.0,
+    default = 1.0,
+}
+
+option SLs.SmashLongswordSpawnMult {
+    page = SLs,
+    translation = PWPN_ScrapWeaponsBookSpawnMult,
+    type = double,
+    min = 0.0,
+    max = 1000.0,
+    default = 1.0,
+}

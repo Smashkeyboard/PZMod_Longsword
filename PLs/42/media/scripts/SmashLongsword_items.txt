@@ -1,0 +1,20 @@
+module SLs {
+    imports
+    {
+        Base,
+    }
+
+    item LongswordBook
+	{
+		Weight = 0.3,
+		ItemType = base:literature,
+		DisplayName = Prepper Blueprints,
+		Icon = LongswordBook,
+		WorldStaticModel = BookClosedGround,
+		StaticModel = Book,
+		LearnedRecipes = SLs_MakeLongsword,
+		ReplaceOnUse = LongswordBook,
+	}
+
+
+}

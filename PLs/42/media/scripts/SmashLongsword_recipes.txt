@@ -1,0 +1,38 @@
+module SLs
+{
+    imports
+    {
+        Base,
+    }
+
+    /* Build 42 (42.19) conversion of the original Build 41 recipes.
+       recipe -> craftRecipe, OnGiveXP -> xpAward, tool item lists -> item tags,
+       recipe books -> NeedToBeLearn + AutoLearnAll. */
+
+    craftRecipe SLs_MakeLongsword
+    {
+        time = 200,
+        category = Metalworking,
+        Tags = AnySurfaceCraft,
+        timedAction = CraftWeapon2H,
+        SkillRequired = MetalWelding:8;Woodwork:3,
+        NeedToBeLearn = true,
+        AutoLearnAll = MetalWelding:4,
+        xpAward = MetalWelding:100;Woodwork:24,
+        inputs
+        {
+            item 1 tags[base:saw;base:smallsaw;base:crudesaw] mode:keep flags[MayDegradeLight],
+            item 1 tags[base:hammer;base:clubhammer;base:mallet] mode:keep flags[MayDegradeLight;Prop1],
+            item 1 tags[base:screwdriver] mode:keep flags[MayDegradeLight],
+            item 1 tags[base:sharpknife;base:meatcleaver] mode:keep flags[Prop1;IsNotDull;MayDegradeLight],
+            item 6 tags[base:BlowTorch],
+            item 1 [Base.Plank] flags[Prop2],
+            item 3 [Base.ScrapMetal],
+            item 6 [Base.Screws],
+        }
+        outputs
+        {
+            item 1 SLs.SmashLongsword,
+        }
+    }
+}
