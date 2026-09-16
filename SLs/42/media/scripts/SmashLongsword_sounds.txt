@@ -19,14 +19,4 @@ module SLs{
         distanceMax = 9,
         }
     }
-
-
-
-
-
-
-
-
-
-
 }

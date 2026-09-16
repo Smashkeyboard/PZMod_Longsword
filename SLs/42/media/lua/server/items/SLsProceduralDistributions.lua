@@ -1,4 +1,7 @@
 require 'Items/ProceduralDistributions'
+local function distributeLoot()
+{
+
 
 local function addLoot(listName, fullType, weight)
     local list = ProceduralDistributions["list"][listName]
@@ -13,7 +16,7 @@ local function addLoot(listName, fullType, weight)
     table.insert(list.items, weight)
 end
 
-local SV = SandboxVars.SLs
+local SV = SandboxVars
 
 local spots = {}
 
@@ -33,8 +36,7 @@ spots.forgedLongBlade = {
 
 
 local weapons = {
-    { "SLs.SmashLongsword", SV.SmashLongswordSpawnMult, spots.forgedLongBlade, 1 }
-    
+    { "SLs.SmashLongsword", SV.SLs.SmashLongswordSpawnMult, spots.forgedLongBlade, 1 }
 }
 
 
@@ -47,7 +49,7 @@ end
 
 
 local books = {
-    { item = "PWPN.ScrapWeaponsBook", mult = SV.ScrapWeaponsBookSpawnMult, spots = {
+    { item = "PWPN.ScrapWeaponsBook", mult = SV.SLs.LongswordBookSpawnMult, spots = {
         { "GarageMetalwork", 2 },
         { "MetalShopTools", 4 },
         { "WeldingWorkshopTools", 6 },
@@ -67,3 +69,5 @@ for _, book in ipairs(books) do
         addLoot(spot[1], book.item, spot[2] * book.mult)
     end
 end
+}
+Events.OnInitWorld().Add(distributeLoot)

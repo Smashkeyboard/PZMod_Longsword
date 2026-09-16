@@ -1,5 +1,5 @@
 local FREE_RECIPES = {
-    /*this is empty for now */
+    "SLs_MakeLongsword"
 }
 
 
@@ -33,7 +33,7 @@ local function whenPlayerCreated(playerIndex, player)
     if mode <= 1 then return end
     learnList(player,FREE_RECIPES)
     if mode >= 3 then
-        learnList(player BOOK_RECIPES)
+    learnList(player, BOOK_RECIPES)
     end
 end
 
