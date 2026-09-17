@@ -2,7 +2,7 @@ module SLs{
 
     sound SmashLongswordSwing
     {
-        catagory = Item,
+        category = Item,
         clip
         {
         file = media/sounds/Swing.ogg,
@@ -12,10 +12,10 @@ module SLs{
 
     sound SmashLongswordHit
     {
-        catagory Item,
+        category = Item,
         clip
         {
-        file = media/sounds/ActallyUsingThisOne.ogg,
+        file = media/sounds/Hit.ogg,
         distanceMax = 9,
         }
     }
