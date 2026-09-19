@@ -2,26 +2,35 @@ module Base
 {
 	model SmashLongsword
     {
-        mesh = weapons/2handed/SmashLongsword,
-        texture = weapons/2handed/SmashLongsword,
-        scale = 0.0035,
+        mesh = weapons/2handed/SmashLongswordModel,
+        texture = weapons/2handed/SmashLongswordTexture,
+        scale = 0.01,
 
        attachment world
         {
-            offset = 0.0155 0.2859 0.015,
-            rotate = -180.0 0.0 177.566,
+            offset = -0.2221 -0.0381 0.2176,
+            rotate = 0.6143 44.4645 -173.4457,
         }
+
         attachment Bip01_Prop1
         {
-            offset = -0.0130 0.0001 0.0025,
-            rotate = -91.7708 0.1212 -94.7969,
+            offset = 0.0172 0.0267 0.0108,
+            rotate = -94.4166 2.8857 92.3840,
+        }
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.2288 0.0061 -0.0317,
+            rotate = -32.8803 -87.1735 -14.9623,
         }
 
         attachment blade_back
         {
-            offset = -0.0130 0.0001 0.0025,
-            rotate = -91.7708 0.1212 -94.7969,
+            offset = -0.0081 0.4809 -0.3213,
+            rotate = 33.3491 -0.5226 -88.8695,
         }
+
+
         
     }
 }

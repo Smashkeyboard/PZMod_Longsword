@@ -48,7 +48,7 @@ require 'Items/ProceduralDistributions'
 
 
     local books = {
-        { item = "PWPN.ScrapWeaponsBook", mult = SV.SLs.LongswordBookSpawnMult or 1, spots = {
+        { item = "SLs.LongswordBook", mult = SV.SLs.LongswordBookSpawnMult or 1, spots = {
             { "GarageMetalwork", 2 },
             { "MetalShopTools", 4 },
             { "WeldingWorkshopTools", 6 },
@@ -60,7 +60,7 @@ require 'Items/ProceduralDistributions'
             { "BedroomSidetable", 0.05 },
             { "WardrobeRedneck", 0.04 },
             { "WardrobeGeneric", 0.02 },
-        } }
+        }, }
     }
 
     for _, book in ipairs(books) do

@@ -8,12 +8,13 @@ module SLs {
 	{
 		Weight = 0.3,
 		ItemType = base:literature,
-		DisplayName = Prepper Blueprints,
+		DisplayName = LongswordBook,
 		Icon = LongswordBook,
-		WorldStaticModel = BookClosedGround,
-		StaticModel = Book,
+		WorldStaticModel = BookGreen_Ground,
+		StaticModel = BookGreen,
 		LearnedRecipes = SLs_MakeLongsword,
 		ReplaceOnUse = LongswordBook,
+		DisplayCategory = Literature,
 	}
 
 
