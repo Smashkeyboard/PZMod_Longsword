@@ -1,8 +1,3 @@
-local FREE_RECIPES = {
-    /*this is empty for now */
-}
-
-
 
 local BOOK_RECIPES = {
     "SLs_MakeLongsword"
@@ -31,9 +26,8 @@ local function whenPlayerCreated(playerIndex, player)
     if not player or not player.getKnownRecipes then return end
     local mode = getCurrentMode()
     if mode <= 1 then return end
-    learnList(player,FREE_RECIPES)
     if mode >= 3 then
-        learnList(player BOOK_RECIPES)
+    learnList(player, BOOK_RECIPES)
     end
 end
 

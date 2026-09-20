@@ -1,0 +1,22 @@
+module SLs{
+
+    sound SmashLongswordSwing
+    {
+        category = Item,
+        clip
+        {
+        file = media/sounds/Swing.ogg,
+        distanceMax = 7,
+        }
+    }
+
+    sound SmashLongswordHit
+    {
+        category = Item,
+        clip
+        {
+        file = media/sounds/Hit.ogg,
+        distanceMax = 9,
+        }
+    }
+}
