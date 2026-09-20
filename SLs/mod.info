@@ -1,8 +1,7 @@
 name=Smashs Longsword
-id=ImportantThingHere
+id=ImportantIDThingHere
 author=Smashkeyboard
-poster=
-icon=
+poster=poster.png
 modversion=1
 versionMin=42.20
-description=Adds a longsword to the game.
+description=What this mod does is add a new longsword to the game.It proceduraly generates it in places that you may be able to find it. Lastly it contains a book that when read learns you the recipe to make the longsword.
