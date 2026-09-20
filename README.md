@@ -13,7 +13,8 @@ This is my first attempt on a mod, so wish me luck.
 8. And you are done, just be careful because your mod will not be updated if done the way you did now. Therefore you  maybe should consider using the steam workshop instead, if its been posted there.
 
 ## What the mod does
-What this mod does is add a new melee weapon in the game. The melee weapon is a longsword that is very long.
+What this mod does is add a new longsword to the game.
+It proceduraly generates it in places that you may be able to find it. Lastly it contains a book that when read learns you the recipe to make the longsword.
 
 ## What I got inspiration/help from
 
